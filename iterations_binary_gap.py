@@ -1,6 +1,7 @@
 import re
 
 
+# Find longest sequence of zeros in binary representation of an integer.
 def solution(n):
     n_bin = "{0:b}".format(n)
     gaps = re.findall(r"[0]+1", n_bin)
